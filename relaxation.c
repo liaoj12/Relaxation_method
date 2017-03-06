@@ -26,7 +26,8 @@ void Jacobi_method(int row, int width, double grid[row][width],\
       for (int j = 1; j < width - 1; j++) {
         // update new values
         grid[i][j] = (grid_old[i+1][j]+grid_old[i-1][j]+ \
-                      grid_old[i][j+1]+grid_old[i][j-1])/4.;
+                      grid_old[i][j+1]+grid_old[i][j-1]+ \
+                      (4*PI)*(4*PI)*EPSILON*EPSILON*rho[i][j])/4.;
       }
     }
 
@@ -57,7 +58,8 @@ void Gauss_Seidel_method(int row, int width, double grid[row][width],\
       for (int j = 1; j < width - 1; j++) {
         // update new values
         grid[i][j] = (grid[i+1][j]+grid[i-1][j]+ \
-                      grid[i][j-1]+grid[i][j+1])/4.;
+                      grid[i][j-1]+grid[i][j+1]+ \
+                      (4*PI)*(4*PI)*EPSILON*EPSILON*rho[i][j])/4.;
       }
     }
 
