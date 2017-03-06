@@ -31,12 +31,16 @@ int main(int argc, char const *argv[]) {
   }
 
 
-  Jacobi_method(row, width, grid, rho);
-  printf("grid after jacobi method\n");
+  // Jacobi_method(row, width, grid, rho);
+  // printf("grid after jacobi method\n");
 
 
   // Gauss_Seidel_method(row, width, grid, rho);
   // printf("print 2d after Gauss-Seidel method\n");
+
+  over_Gauss_Seidel_method(row, width, grid, rho, 1.5);
+  printf("print 2d after over Gauss-Seidel method\n");
+
   print_2D(row, width,  grid);
 
   return 0;

@@ -26,6 +26,6 @@ void Gauss_Seidel_method(int row, int width, double grid[row][width],\
 
 // over relaxation Gauss_Seidel_method
 void over_Gauss_Seidel_method(int row, int width, double grid[row][width],\
-                              double rho[row][width]);
+                              double rho[row][width], double w);
 
 #endif

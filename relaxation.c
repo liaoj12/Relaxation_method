@@ -77,6 +77,28 @@ void Gauss_Seidel_method(int row, int width, double grid[row][width],\
 }
 
 void over_Gauss_Seidel_method(int row, int width, double grid[row][width],\
-                              double rho[row][width]) {
+                              double rho[row][width], double w) {
 
+  printf("Running Gauss-Seidel method\n");
+  double compare;
+
+  for (int iteration = 1; iteration < MAXITERATION; iteration++) {
+    compare = grid[1][1];
+    for (int i = 1; i < row - 1; i++) {
+      for (int j = 1; j < width - 1; j++) {
+        // update new values
+        grid[i][j] = (1-w)*grid[i][j] + w*(grid[i+1][j]+grid[i-1][j]+ \
+                                           grid[i][j-1]+grid[i][j+1]+ \
+                     (4*PI)*(4*PI)*EPSILON*EPSILON*rho[i][j])/4.;
+      }
+    }
+
+    // covergence crieria
+    if (fabs(grid[1][1]-compare) < EPSILON) {
+      printf("Converge after %d iterations. Quit Gauss-Seidel method.\n", iteration);
+      break;
+    }
+
+  // print_2D(row, width, grid);
+  }
 }
