@@ -38,7 +38,7 @@ int main(int argc, char const *argv[]) {
   // Gauss_Seidel_method(row, width, grid, rho);
   // printf("print 2d after Gauss-Seidel method\n");
 
-  over_Gauss_Seidel_method(row, width, grid, rho, 1.5);
+  //over_Gauss_Seidel_method(row, width, grid, rho, 1.5);
   printf("print 2d after over Gauss-Seidel method\n");
 
   print_2D(row, width,  grid);
