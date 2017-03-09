@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 #include "relaxation.h"
 
 
@@ -30,7 +31,6 @@ int main(int argc, char const *argv[]) {
     begin = 1;
   }
 
-
   // Jacobi_method(row, width, grid, rho);
   // printf("grid after jacobi method\n");
 
@@ -42,6 +42,8 @@ int main(int argc, char const *argv[]) {
   printf("print 2d after over Gauss-Seidel method\n");
 
   print_2D(row, width,  grid);
+  free(grid);
+  free(rho);
 
   return 0;
 }

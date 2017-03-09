@@ -79,7 +79,7 @@ void Gauss_Seidel_method(int row, int width, double grid[row][width],\
 void over_Gauss_Seidel_method(int row, int width, double grid[row][width],\
                               double rho[row][width], double w) {
 
-  printf("Running Gauss-Seidel method\n");
+  printf("Running over relax Gauss-Seidel method\n");
   double compare;
 
   for (int iteration = 1; iteration < MAXITERATION; iteration++) {
