@@ -1,7 +1,10 @@
 # define object files
 OBJECTS = \
 main.o \
-relaxation.o \
+jacobi.o \
+gauss_seidel.o \
+over_gauss_seidel.o \
+print2D.o
 
 # define comiler and its flags
 CC = gcc
