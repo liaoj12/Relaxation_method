@@ -1,3 +1,13 @@
+/*
+ * Name: Junjie Liao
+ * File: over_gauss_seidel.h
+ * Created: Mar 04 2017
+ * Last Modified: Apr 06 2017
+ *
+ * Comment:
+ *   - header file for over-relaxation GS method
+ */
+
 #ifndef _OVER_GAUSS_SEIDEL_H
 #define _OVER_GAUSS_SEIDEL_H
 

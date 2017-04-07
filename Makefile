@@ -4,7 +4,8 @@ main.o \
 jacobi.o \
 gauss_seidel.o \
 over_gauss_seidel.o \
-print2D.o
+print2D.o \
+plot_handler.o
 
 # define comiler and its flags
 CC = gcc
@@ -18,4 +19,4 @@ main: $(OBJECTS)
 
 # Remove all object files and programme executables
 clean:
-	rm -f *.o *.O main
+	rm -f *.o *.O *.png main
