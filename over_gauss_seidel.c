@@ -1,5 +1,4 @@
 /*
- * Name: Junjie Liao
  * File: over_gauss_seidel.c
  * Created: Mar 04 2017
  * Last Modified: Apr 06 2017
