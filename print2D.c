@@ -1,5 +1,4 @@
 /*
- * Name: Junjie Liao
  * File: print2D.c
  * Created: Mar 04 2017
  * Last Modified: Apr 06 2017
